@@ -1,0 +1,86 @@
+{
+  "collapse-filter": true,
+  "search": "-path:\"People in my life/Special Categories\"  -path:README -path:Templates  ",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:Journal",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:Goals",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:\"Me in 5 years\"",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    },
+    {
+      "query": "path:\"People in my life\"",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    },
+    {
+      "query": "path:\"Random Thoughts\"",
+      "color": {
+        "a": 1,
+        "rgb": 5431473
+      }
+    },
+    {
+      "query": "path:Dreams",
+      "color": {
+        "a": 1,
+        "rgb": 5419488
+      }
+    },
+    {
+      "query": "path:Ideas  ",
+      "color": {
+        "a": 1,
+        "rgb": 5395168
+      }
+    },
+    {
+      "query": "path: Lists/Recipes  ",
+      "color": {
+        "a": 1,
+        "rgb": 16612095
+      }
+    },
+    {
+      "query": "path:Lists  ",
+      "color": {
+        "a": 1,
+        "rgb": 11361494
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": -1.5,
+  "nodeSizeMultiplier": 1.04427083333333,
+  "lineSizeMultiplier": 1.04427083333333,
+  "collapse-forces": true,
+  "centerStrength": 0.552083333333333,
+  "repelStrength": 15.5208333333333,
+  "linkStrength": 1,
+  "linkDistance": 299,
+  "scale": 0.1596038732913609,
+  "close": true
+}

@@ -1,0 +1,1 @@
+Ever heard of a dream diary? Well this is what's inside of this folder. Whenever I vividly remember a dream in the morning I'll try to (remember to) write it down here.

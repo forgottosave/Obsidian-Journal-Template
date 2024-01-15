@@ -1,0 +1,229 @@
+{
+  "main": {
+    "id": "bd660cb72837a078",
+    "type": "split",
+    "children": [
+      {
+        "id": "afd69ce90f342d35",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "acd4d72838645955",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5e00435d2085b554",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5955f2f7c024a5bd",
+    "type": "split",
+    "children": [
+      {
+        "id": "abc19970f75a4d2b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "333bb405430f4862",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "bae024be86265e78",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ed56d0fa8f21934b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 240.5
+  },
+  "right": {
+    "id": "f57eefdb901b71a6",
+    "type": "split",
+    "children": [
+      {
+        "id": "24176c1cbe875795",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7b5243a3e766f24a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "38c36dced4d7c5e3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3dbe0c64601e94fe",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f5ea6ecdf7f2725d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          },
+          {
+            "id": "60f62b5aacdd0860",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "a6a3123a0be81481",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 264.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "acd4d72838645955",
+  "lastOpenFiles": [
+    "Lists/Entertainment/Series.md",
+    "Lists/Entertainment/Movies.md",
+    "Lists/Entertainment/Books.md",
+    "README.md",
+    "Goals/Life Goals.md",
+    "Templates/Rezept.md",
+    "Templates/Journal Entry.md",
+    "src/README - src.md",
+    "Lists/Recipes/Rezepte.md",
+    "People in my life/README - People.md",
+    "People in my life/University/John.md",
+    "Journal/240107 - Example 7.md",
+    "People in my life/University/Pauline Barth.md",
+    "People in my life/University/Test Friend.md",
+    "People in my life/University/Kim.md",
+    "People in my life/University/Leonardo Özuluca.md",
+    "People in my life/Family/Brother.md",
+    "People in my life/Family/Mom.md",
+    "People in my life/Family/Dad.md",
+    "People in my life/Family/Sister.md",
+    "People in my life/Family/Zoltán Ensel-Résö.md",
+    "People in my life/Family/Natasha Turchaniova.md",
+    "People in my life/Family/Alexander Schurr.md",
+    "People in my life/Family/Gabi Schurr.md",
+    "People in my life/Family/Family Tree.canvas",
+    "People in my life/Family/Frieda Schurr.md",
+    "People in my life/Family/Jonas Schurr.md",
+    "Lists/Computer",
+    "Goals/Letters to Myself",
+    "src/sailboat-banner.jpg",
+    "src/Rezeptbuch.png",
+    "src/Lachs-Spinat-Rolle.png",
+    "Lists/Recipes",
+    "onStartup.sh~",
+    "Lists/Recipes/Nachspeisen",
+    "Lists/Recipes/Fisch",
+    "Lists/Recipes/Fleisch",
+    "Lists/Recipes/Vegetarisch",
+    "Lists/Recipes/Suppen",
+    "Lists/Entertainment",
+    "src/lofi-girl.jpg",
+    "src/Pasted image 20230605102920.png",
+    "src/Pasted image 20230605103352.png",
+    "src/Pasted image 20230605103301.png",
+    "src/Pasted image 20230605103136.png",
+    "src/Pasted image 20230605103054.png"
+  ]
+}

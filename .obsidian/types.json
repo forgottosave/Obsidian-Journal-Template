@@ -1,0 +1,19 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "Morning": "checkbox",
+    "Date": "date",
+    "Duration": "number",
+    "Vegetarisch": "checkbox",
+    "Difficulty": "number",
+    "Gesund": "number",
+    "Sleep": "number",
+    "Personen": "number",
+    "Ingredients": "multitext",
+    "Zutaten": "multitext",
+    "kcal": "number",
+    "Productive": "number"
+  }
+}

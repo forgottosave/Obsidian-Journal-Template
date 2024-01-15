@@ -1,0 +1,5 @@
+{
+  "format": "YYMMDD",
+  "folder": "Journal",
+  "template": "Templates/Journal Entry"
+}
