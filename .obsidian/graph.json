@@ -8,66 +8,52 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:Journal",
+      "query": "path:Dreams",
       "color": {
         "a": 1,
-        "rgb": 14701138
+        "rgb": 15356755
       }
     },
     {
       "query": "path:Goals",
       "color": {
         "a": 1,
-        "rgb": 14725458
-      }
-    },
-    {
-      "query": "path:\"Me in 5 years\"",
-      "color": {
-        "a": 1,
-        "rgb": 11657298
-      }
-    },
-    {
-      "query": "path:\"People in my life\"",
-      "color": {
-        "a": 1,
-        "rgb": 5431378
-      }
-    },
-    {
-      "query": "path:\"Random Thoughts\"",
-      "color": {
-        "a": 1,
-        "rgb": 5431473
-      }
-    },
-    {
-      "query": "path:Dreams",
-      "color": {
-        "a": 1,
-        "rgb": 5419488
+        "rgb": 16420352
       }
     },
     {
       "query": "path:Ideas  ",
       "color": {
         "a": 1,
-        "rgb": 5395168
+        "rgb": 15909440
       }
     },
     {
-      "query": "path: Lists/Recipes  ",
+      "query": "path:Journal",
       "color": {
         "a": 1,
-        "rgb": 16612095
+        "rgb": 7655981
       }
     },
     {
       "query": "path:Lists  ",
       "color": {
         "a": 1,
-        "rgb": 11361494
+        "rgb": 6402303
+      }
+    },
+    {
+      "query": "path:\"People in my life/_Friend-Groups\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 16612095
+      }
+    },
+    {
+      "query": "path:\"People in my life\"",
+      "color": {
+        "a": 1,
+        "rgb": 7098074
       }
     }
   ],
