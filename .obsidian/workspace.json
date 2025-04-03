@@ -16,7 +16,9 @@
                 "file": "README.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ]
@@ -38,8 +40,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +59,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +69,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -93,7 +102,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for README"
             }
           },
           {
@@ -105,7 +116,9 @@
                 "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from README"
             }
           },
           {
@@ -115,8 +128,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
-              }
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -125,8 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
-              }
+                "file": "README.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of README"
             }
           },
           {
@@ -138,7 +160,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           },
           {
@@ -148,7 +172,9 @@
               "type": "file-properties",
               "state": {
                 "file": "README.md"
-              }
+              },
+              "icon": "lucide-info",
+              "title": "File properties for README"
             }
           }
         ],
@@ -171,33 +197,37 @@
   },
   "active": "acd4d72838645955",
   "lastOpenFiles": [
+    "People in my life/University/Max Muster.md",
+    "People in my life/University/John.md",
     "README.md",
+    "People in my life/README - People.md",
+    "People in my life/Family/Sister.md",
+    "People in my life/Family/Mom.md",
+    "People in my life/Family/Dad.md",
+    "People in my life/Family/Brother.md",
+    "Notes/README - Notes.md",
+    "Journal/2024/01/240101 - Example 1.md",
+    "Journal/2025/Untitled",
+    "Journal/2025",
+    "Journal/README - Journal.md",
+    "Journal/2024/01",
+    "Tracker.md",
+    "Journal/2024/01/240107 - Example 7.md",
+    "Journal/2024/01/240106 - Example 6.md",
+    "Journal/2024/01/240105 - Example 5.md",
+    "Journal/2024/01/240104 - Example 4.md",
+    "Journal/2024/01/240103 - Example 3.md",
+    "Journal/2024/01/240102 - Example 2.md",
+    "Lists/Recipes/Rezepte.md",
+    "Journal/2024",
+    "Lists/Recipes/Lachs-Spinat-Rolle.md",
     "Lists/Entertainment/Series.md",
     "Lists/Entertainment/Movies.md",
     "Lists/Entertainment/Books.md",
     "Goals/Life Goals.md",
     "Templates/Rezept.md",
     "Templates/Journal Entry.md",
-    "src/README - src.md",
-    "Lists/Recipes/Rezepte.md",
-    "People in my life/README - People.md",
-    "People in my life/University/John.md",
-    "Journal/240107 - Example 7.md",
-    "People in my life/University/Pauline Barth.md",
-    "People in my life/University/Test Friend.md",
-    "People in my life/University/Kim.md",
-    "People in my life/University/Leonardo Özuluca.md",
-    "People in my life/Family/Brother.md",
-    "People in my life/Family/Mom.md",
-    "People in my life/Family/Dad.md",
-    "People in my life/Family/Sister.md",
-    "People in my life/Family/Zoltán Ensel-Résö.md",
-    "People in my life/Family/Natasha Turchaniova.md",
-    "People in my life/Family/Alexander Schurr.md",
-    "People in my life/Family/Gabi Schurr.md",
     "People in my life/Family/Family Tree.canvas",
-    "People in my life/Family/Frieda Schurr.md",
-    "People in my life/Family/Jonas Schurr.md",
     "Lists/Computer",
     "Goals/Letters to Myself",
     "src/sailboat-banner.jpg",
@@ -207,10 +237,6 @@
     "onStartup.sh~",
     "Lists/Recipes/Nachspeisen",
     "Lists/Recipes/Fisch",
-    "Lists/Recipes/Fleisch",
-    "Lists/Recipes/Vegetarisch",
-    "Lists/Recipes/Suppen",
-    "Lists/Entertainment",
     "src/lofi-girl.jpg",
     "src/Pasted image 20230605102920.png",
     "src/Pasted image 20230605103352.png",

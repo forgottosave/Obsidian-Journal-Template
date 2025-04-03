@@ -1,22 +1,7 @@
-![[lofi-girl.jpg]]
-## Tasks
-**Carreer**
-- [ ] Use this as your **start-page**, to always keep your most important, current goals with you
-- [ ] some important career ToDos [due:: 2024-01-01]
-- [ ] learn for exam [due:: 2024-03-01]
-- [ ] tasks that are important to you to finish
-**Privat**
-- [ ] write anything down here [due::18.01.2024]
-- [ ] that you have to do [due:: 2024-01-17]
-- [ ] in your private life.
-
-
-| <font style="color:pink">TOP reminders</font> |  | <font style="color:pink">Drink more Water</font> |  | <font style="color:pink">Exercise more</font> |
-| ---- | ---- | ---- | ---- | ---- |
-## Habits
+### Habits
 ```dataviewjs
 
-const rawData = await dv.query('TABLE dateformat(Date, "yyyy-MM-dd"), Rating, (Sport * 10) as Sport, (Sleep * 10) as Sleep, (Productive * 10) as Productive FROM "Journal" SORT date asc WHERE Rating and date(Date) < date(now)');
+const rawData = await dv.query('TABLE dateformat(Date, "dd.MM - ccc"), (((Rating / 10) * 3) - 13) as Rating, (Prostrations / 27) as Prostrations, Sleep, Productive, Sport FROM "Journal" SORT date asc WHERE Rating and date(Date) < date(now) and date(Date) > date(now) - dur(21 days)');
 
 const rows = rawData.value.values;
 
@@ -40,17 +25,17 @@ const chartData = {
 		        borderWidth: ['1'],
 		        tension: ['0.3']
 		    },
-            {label: 'Physical Activity',
-	            data: rows.map(x => x[3]),
-	            backgroundColor: ['pink'],
-	            borderColor: ['pink'],
-	            borderWidth: ['1'],
-		        tension: ['0.3']
-	        },
-	        {label: 'Productive Time',
+	        {label: 'Productive',
 		        data: rows.map(x => x[5]),
 		        backgroundColor: ['purple'],
 		        borderColor: ['purple'],
+		        borderWidth: ['1'],
+		        tension: ['0.3']
+	        },
+	        {label: 'Sport',
+		        data: rows.map(x => x[6]),
+		        backgroundColor: ['green'],
+		        borderColor: ['green'],
 		        borderWidth: ['1'],
 		        tension: ['0.3']
 	        }
@@ -60,60 +45,133 @@ const chartData = {
 
 window.renderChart(chartData, this.container);
 ```
-#### Sport
-```dataview
-table sum(rows.Sport) as "Sport / Month"
-group by dateformat(Date, "yyyy-MM") as Date
-where rows.Sport and date(Date) < date(now)
-```
-```dataview
-list "**<font style=\"color:cyan\">" + sum(rows.Sport) + "</font>**"
-where Sport and date(Date) < date(now)
-group by "=> Total"
-```
-#### Rating
-```dataview
-table round(sum(rows.rating) / length(rows.rating),1) as "Avg Monthly Rating"
-from "Journal"
-where date(Date) < date(now)
-group by date(Date).year + "-" + date(Date).month as Date
-where rows.date
-```
-```dataview
-list "**<font style=\"color:cyan\">" + round(sum(rows.rating) / length(rows.rating),1) + "</font>**"
-from "Journal"
-where Rating and date(Date) < date(now)
-group by "=> Total"
-```
-#### Morning Routine
-Introduced the morning routine on [[240103 - Morning Routine|08.01.24]]
+### Rating Overall
 ```dataviewjs
-
-const rawData = await dv.query('TABLE dateformat(Date, "yyyy-MM-dd"), Morning FROM "Journal" SORT date asc WHERE Rating and date(Date) < date(now) and date(Date) > date("2024-01-07")');
+const rawData = await dv.query('TABLE dateformat(Date, "yyyy-MM-dd"), Rating SORT date asc WHERE Rating');
 
 const rows = rawData.value.values;
 
+const normalLine = [];
+const max = [];
+const min = [];
+for (i = 1; i < rows.length; i++) {
+  normalLine[i] = 60;
+  max[i] = 70;
+  min[i] = 50;
+}
+
+const avg = [];
+const avgrange = 4;
+const factor = 2.5;
+for (i = 1; i < rows.length; i++) {
+	var mi = i - avgrange;
+	var ma = i + avgrange;
+	if (mi < 0) mi = 0;
+	if (ma >= rows.length) ma = rows.length - 1;
+	
+	var values = 0;
+	var count = 0;
+	for (k = mi; k <= ma; k++) {
+		var weight = 1 / Math.pow(1.4,Math.abs(i-k));
+		values += rows[k][2] * weight;
+		count += weight;
+	}
+	avg[i] = values / count;
+	
+	avg[i] = ((avg[i] - 60) * factor) + 60;
+}
+
 const chartData = {
-    type: 'bar',
-    tension: '1',
+    type: 'line',
     transparency: '0.75',
     data: {
         labels: rows.map(x => x[1]),
         datasets: [
-            {label: 'Morning Routine Successful', data: rows.map(x => x[2]), backgroundColor: ['blue']}
+	        {label: 'Rating',
+		        data: rows.map(x => x[2]),
+		        backgroundColor: ['cyan'],
+		        borderColor: ['cyan'],
+		        borderWidth: ['1'],
+		        tension: ['0']
+	        },
+	        {label: 'Averaged',
+		        data: avg,
+		        backgroundColor: ['blue'],
+		        borderColor: ['blue'],
+		        borderWidth: ['1'],
+		        tension: ['0']
+	        },/*
+	        {label: 'Max Normal',
+		        data: max,
+		        backgroundColor: ['green'],
+		        borderColor: ['green'],
+		        borderWidth: ['1'],
+		        tension: ['0']
+	        },
+	        {label: 'Min Normal',
+		        data: min,
+		        backgroundColor: ['green'],
+		        borderColor: ['green'],
+		        borderWidth: ['1'],
+		        tension: ['0']
+	        },*/
+	        {label: 'Normal',
+		        data: normalLine,
+		        backgroundColor: ['darkgreen'],
+		        borderColor: ['darkgreen'],
+		        borderWidth: ['0'],
+		        tension: ['0']
+	        }
         ],
     },
 }
 
 window.renderChart(chartData, this.container);
 ```
----
-![[Life Goals]]
 
----
-#### Data
 ```dataview
-table Rating, Prostrations, Morning
-from "Journal"
-where Rating and date(Date) < date(now)
+list "**<font style=\"color:cyan\">" + round(sum(rows.rating) / length(rows.rating),1) + "</font>**"
+FROM "Journal"
+WHERE Rating
+GROUP BY "=> Average Rating"
+```
+
+### Top 10 Days
+
+```dataviewjs
+
+const rawData = await dv.query('TABLE dateformat(Date, "yyyy-MM-dd"), Rating SORT Rating desc WHERE Rating');
+
+const rows = rawData.value.values;
+
+const chartData = {
+    type: 'line',
+    transparency: '0.75',
+    data: {
+        labels: rows.map(x => x[1]),
+        datasets: [
+	        {label: 'Rating',
+		        data: rows.map(x => x[2]),
+		        backgroundColor: ['cyan'],
+		        borderColor: ['cyan'],
+		        borderWidth: ['1'],
+		        tension: ['0']
+	        }
+        ],
+    },
+}
+
+//window.renderChart(chartData, this.container);
+
+//dv.paragraph("|**Day**|" + rows[0][1] + "|\n|-|-|\n|**Rating ->**|**<font style=\"color:orange\">" + rows[0][2] + "%</font>**|");
+
+var result = "| Rating | Day | Title |\n|-|-|-|\n";
+for (i = 0; i < 10 && i < rows.length; i++) {
+  result += "|**<font style=\"color:orange\">"
+			  + rows[i][2] + "%</font>**|**"
+			  + rows[i][1] + "**|"
+			  + rows[i][0] + "|\n"
+}
+
+dv.paragraph(result);
 ```
