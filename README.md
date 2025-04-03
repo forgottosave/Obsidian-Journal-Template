@@ -25,7 +25,8 @@ For details see the following chapters:
 
 #### Writing a Journal Entry
 1. Create a new Journal Note. I usually copy & paste the last day :)
-2. Fill out the statistics on top. If you want to change the shown statistics, see the chapter [[README#Statistics|Statistics]].
+2. Fill out the statistics on top. If you want to change the shown statistics, see the chapter [[README#Statistics|Statistics]]. The daily rating should be between 0 and 100.
+   I personally set a "normal day" as 60, fluctuating between 50 and 70. Anything below or above is a special occasion for me to be very happy/excited or very sad/depressed.
 3. Optionally take some personal notes for the day below.
 4. Link people when mentioning them (see chapter [[README#Linking People or Notes|Linking People or Notes]]). This creates a nice graph linking all people to all days you spent with them, or thinking about them (see chapter [[README#Connection Graph|Connections Graph]])
 
@@ -60,7 +61,7 @@ There are different sections in this journal project. Here  and this should be a
 - [[README - Journal|Journals]]: Journal Entries, just open your daily notes here, using the template.
 - [[README - Lists|Lists]]: Any kind of list, like *best-of*s, or recipes
 - [[README - People|People in my life]]: The people I met in my life
-All images and external content is stored in [[README - src|src]], templates in Templates
+- All images and external content is stored in [[README - src|src]], templates in Templates
 
 ## Obsidian
 [Obsidian](https://obsidian.md/) is the markdown editor that I use to be able to easily visualize, link and structure my Markdown files in this repository. Some views can't render without this program and its plugins (see .obsidian for list of used plugins).

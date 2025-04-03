@@ -11,14 +11,24 @@
             "id": "acd4d72838645955",
             "type": "leaf",
             "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "c3bcd2431316cf42",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Journal/2024/01/240104 - Example 4.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "240104 - Example 4"
             }
           }
         ]
@@ -94,7 +104,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +113,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for README"
+              "title": "Backlinks"
             }
           },
           {
@@ -113,12 +122,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from README"
+              "title": "Outgoing links"
             }
           },
           {
@@ -142,13 +150,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of README"
+              "title": "Outline"
             }
           },
           {
@@ -170,11 +177,9 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {
-                "file": "README.md"
-              },
+              "state": {},
               "icon": "lucide-info",
-              "title": "File properties for README"
+              "title": "File properties"
             }
           }
         ],
@@ -197,27 +202,27 @@
   },
   "active": "acd4d72838645955",
   "lastOpenFiles": [
+    "Journal/2024/01/240104 - Example 4.md",
+    "README.md",
+    "Journal/2024/01/240107 - Example 7.md",
+    "Journal/2024/01/240106 - Example 6.md",
+    "Journal/2024/01/240105 - Example 5.md",
+    "Journal/2024/01/240103 - Example 3.md",
+    "Journal/2024/01/240102 - Example 2.md",
+    "Journal/2024/01/240101 - Example 1.md",
     "People in my life/University/Max Muster.md",
     "People in my life/University/John.md",
-    "README.md",
     "People in my life/README - People.md",
     "People in my life/Family/Sister.md",
     "People in my life/Family/Mom.md",
     "People in my life/Family/Dad.md",
     "People in my life/Family/Brother.md",
     "Notes/README - Notes.md",
-    "Journal/2024/01/240101 - Example 1.md",
     "Journal/2025/Untitled",
     "Journal/2025",
     "Journal/README - Journal.md",
     "Journal/2024/01",
     "Tracker.md",
-    "Journal/2024/01/240107 - Example 7.md",
-    "Journal/2024/01/240106 - Example 6.md",
-    "Journal/2024/01/240105 - Example 5.md",
-    "Journal/2024/01/240104 - Example 4.md",
-    "Journal/2024/01/240103 - Example 3.md",
-    "Journal/2024/01/240102 - Example 2.md",
     "Lists/Recipes/Rezepte.md",
     "Journal/2024",
     "Lists/Recipes/Lachs-Spinat-Rolle.md",
