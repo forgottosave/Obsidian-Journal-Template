@@ -1,5 +1,6 @@
 {
-  "format": "YYMMDD",
+  "format": "YYYY/MM/YYMMDD",
   "folder": "Journal",
-  "template": "Templates/Journal Entry"
+  "template": "_src_/templates/Journal Entry",
+  "autorun": true
 }

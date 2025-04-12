@@ -1,7 +1,12 @@
 ### Habits
 ```dataviewjs
+// SETTINGS
 
-const rawData = await dv.query('TABLE dateformat(Date, "dd.MM - ccc"), (((Rating / 10) * 3) - 13) as Rating, (Prostrations / 27) as Prostrations, Sleep, Productive, Sport FROM "Journal" SORT date asc WHERE Rating and date(Date) < date(now) and date(Date) > date(now) - dur(21 days)');
+const DAYS_TO_SHOW = 21
+
+// SETTINGS END (do not touch after this)
+
+const rawData = await dv.query('TABLE dateformat(Date, "dd.MM - ccc"), (Rating / 10) as Rating, Sleep, Productive, Sport FROM "Journal" SORT date asc WHERE Rating and date(Date) < date(now) and date(Date) > date(now) - dur(' + DAYS_TO_SHOW + ' days)');
 
 const rows = rawData.value.values;
 
@@ -45,8 +50,18 @@ const chartData = {
 
 window.renderChart(chartData, this.container);
 ```
+
 ### Rating Overall
+
 ```dataviewjs
+// SETTINGS
+
+const MEDIUM_RATING = 50
+const CURVE_DAMPING = 4
+const FACTOR = 2.5
+
+// SETTINGS END (do not touch after this)
+
 const rawData = await dv.query('TABLE dateformat(Date, "yyyy-MM-dd"), Rating SORT date asc WHERE Rating');
 
 const rows = rawData.value.values;
@@ -54,18 +69,17 @@ const rows = rawData.value.values;
 const normalLine = [];
 const max = [];
 const min = [];
-for (i = 1; i < rows.length; i++) {
-  normalLine[i] = 60;
-  max[i] = 70;
-  min[i] = 50;
+for (i = 0; i < rows.length; i++) {
+  normalLine[i] = MEDIUM_RATING;
+  max[i] = MEDIUM_RATING + 10;
+  min[i] = MEDIUM_RATING - 10;
 }
 
 const avg = [];
-const avgrange = 4;
-const factor = 2.5;
-for (i = 1; i < rows.length; i++) {
-	var mi = i - avgrange;
-	var ma = i + avgrange;
+
+for (i = 0; i < rows.length; i++) {
+	var mi = i - CURVE_DAMPING;
+	var ma = i + CURVE_DAMPING;
 	if (mi < 0) mi = 0;
 	if (ma >= rows.length) ma = rows.length - 1;
 	
@@ -78,7 +92,7 @@ for (i = 1; i < rows.length; i++) {
 	}
 	avg[i] = values / count;
 	
-	avg[i] = ((avg[i] - 60) * factor) + 60;
+	avg[i] = ((avg[i] - MEDIUM_RATING) * FACTOR) + MEDIUM_RATING;
 }
 
 const chartData = {
@@ -100,21 +114,7 @@ const chartData = {
 		        borderColor: ['blue'],
 		        borderWidth: ['1'],
 		        tension: ['0']
-	        },/*
-	        {label: 'Max Normal',
-		        data: max,
-		        backgroundColor: ['green'],
-		        borderColor: ['green'],
-		        borderWidth: ['1'],
-		        tension: ['0']
 	        },
-	        {label: 'Min Normal',
-		        data: min,
-		        backgroundColor: ['green'],
-		        borderColor: ['green'],
-		        borderWidth: ['1'],
-		        tension: ['0']
-	        },*/
 	        {label: 'Normal',
 		        data: normalLine,
 		        backgroundColor: ['darkgreen'],
