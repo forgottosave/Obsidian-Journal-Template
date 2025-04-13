@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Tracker.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Tracker"
             }
           }
         ],
@@ -94,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 240.5
+    "width": 200
   },
   "right": {
     "id": "f57eefdb901b71a6",
@@ -198,26 +198,28 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "daily-notes:Open today's daily note": false
     }
   },
   "active": "22f5da8b123b7785",
   "lastOpenFiles": [
-    "Tracker.md",
-    "_src_/templates/Journal Entry.md",
     "README.md",
-    "Journal/2024/01/240102 - Example 2.md",
-    "Journal/2024/01/240103 - Example 3.md",
+    "Tracker.md",
+    "People in my life/University/Max Muster.md",
+    "People in my life/University/John.md",
+    "People in my life/Family/Brother.md",
+    "Journal/2024/01/240101 - Example 1.md",
     "Journal/2024/01/240104 - Example 4.md",
+    "Journal/2024/01/240103 - Example 3.md",
+    "Journal/2024/01/240102 - Example 2.md",
     "Journal/2024/01/240105 - Example 5.md",
     "Journal/2024/01/240106 - Example 6.md",
-    "Journal/2024/01/240101 - Example 1.md",
+    "Journal/2025/04/250413.md",
+    "Journal/2025/04",
+    "Journal/2025",
+    "_src_/templates/Journal Entry.md",
     "Journal/2024/01/240107 - Example 7.md",
     "Ideas/Literature/My Own Book.md",
     "Ideas/Lists/Books.md",
@@ -225,22 +227,16 @@
     "Ideas/Lists/README - Lists.md",
     "Journal/2025/04/250412.md",
     "_src_/templates/Rezept.md",
-    "Journal/2025/04",
-    "Journal/2025",
     "Dreams/README - Dreams.md",
     "Ideas/README - Ideas.md",
     "Ideas/Literature",
     "_src_/attachments/Lachs-Spinat-Rolle.png",
     "_src_/attachments",
-    "People in my life/University/Max Muster.md",
-    "People in my life/University/John.md",
     "People in my life/README - People.md",
     "People in my life/Family/Sister.md",
     "People in my life/Family/Mom.md",
     "People in my life/Family/Dad.md",
-    "People in my life/Family/Brother.md",
     "Journal/2025/Untitled",
-    "Journal/README - Journal.md",
     "Journal/2024/01",
     "Journal/2024",
     "People in my life/Family/Family Tree.canvas",
