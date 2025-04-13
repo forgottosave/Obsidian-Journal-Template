@@ -1,4 +1,11 @@
 # Personal Journal Template
+
+<img src="https://github.com/user-attachments/assets/79db9aa5-e47f-437d-bf8c-1298b0d97df6" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="300" height="220" />
+<img src="https://github.com/user-attachments/assets/992ff3b5-7606-4893-b86f-c236391a0106" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="300" height="220" />
+
+<img src="https://github.com/user-attachments/assets/d72c2c33-f316-4bce-b286-e0bb82179219" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="370" height="220" />
+<img src="https://github.com/user-attachments/assets/06a78793-90bb-4286-897c-7efdcfe51625" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="230" height="220" />
+
 This is a template obsidian vault you can use as a daily journal. It supports *daily journals*, *habit tracking* and some cool *graphs*.
 
 ## How to use it
@@ -9,7 +16,7 @@ For details see the following chapters:
 2. [Writing a Journal Entry](#writing-a-journal-entry)
 3. [Linking People or Notes](#linking-people-or-notes)
 4. [Statistics](#statistics)
-5. [Connections Graph](#connection-graph)
+5. [Connections Graph](#connections-graph)
 
 #### Setup
 1. First, install **Obsidian** (on your computer or phone).
@@ -23,13 +30,17 @@ The next steps might already be set automatically, but double check it and, if n
 #### Writing a Journal Entry
 1. When opening obsidian, you should already be presented with **today's note**.
    If not, or you never close obsidian, just create one by pressing the *Open today's daily note* button.
-2. Fill out the statistics on top. If you want to change the shown statistics, see the chapter [Statistics](#statistics). The defaults are:
+   <img src="https://github.com/user-attachments/assets/33009e29-80d3-4929-8b06-b3ac67b18a5b" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="300" height="220" />
+
+   On mobile select the 3 vertical bars on the bottom right, then the same button.
+
+3. Fill out the statistics on top. If you want to change the shown statistics, see the chapter [Statistics](#statistics). The defaults are:
     - a **daily rating** (between 0 and 100).
     - how many hours of **sleep** you got
     - how many hours you were **productive**
     - how many hours you engaged in **sports** activities
-3. Optionally take some personal notes for the day right below the statistics.
-4. Link people when mentioning them (see chapter [Linking People or Notes](#linking-people-or-notes)). This creates a nice graph linking all people to all days you spent with them, or thinking about them (see chapter [Connections Graph](#connection-graph))
+4. Optionally take some personal notes for the day right below the statistics.
+5. Link people when mentioning them (see chapter [Linking People or Notes](#linking-people-or-notes)). This creates a nice graph linking all people to all days you spent with them, or thinking about them (see chapter [Connections Graph](#connection-graph))
 
 #### Linking People or Notes
 To link files in Obsidian, you can use double-square-brackets like so: `[[file]]`. You can use this to mention people in a journal entry.
