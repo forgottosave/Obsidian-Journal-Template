@@ -101,15 +101,15 @@ const chartData = {
     data: {
         labels: rows.map(x => x[1]),
         datasets: [
-	        {label: 'Rating',
-		        data: rows.map(x => x[2]),
+	        {label: 'Averaged',
+		        data: avg,
 		        backgroundColor: ['cyan'],
 		        borderColor: ['cyan'],
 		        borderWidth: ['1'],
 		        tension: ['0']
 	        },
-	        {label: 'Averaged',
-		        data: avg,
+	        {label: 'Exact',
+		        data: rows.map(x => x[2]),
 		        backgroundColor: ['blue'],
 		        borderColor: ['blue'],
 		        borderWidth: ['1'],
